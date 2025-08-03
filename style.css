@@ -1,0 +1,191 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1rem;
+    font-size: 16px;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about{
+    border: 1px #ccc solid;
+    padding: 10px;
+    display: flexbox;
+
+}
+.me{
+    flex-basis: 40%;
+}
+
+.contain{
+    border: 1px #ccc solid;
+    padding: 10px;
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.contain-2{
+    border: 1px #ccc solid;
+    padding: 10px;
+    display: flexbox;
+    justify-content: space-between;
+}
+
+form{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+.box-1{
+    flex-basis: 40%;
+}
+
+.box-2{
+    flex-basis:40%;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+a:hover{
+    color: red;
+
+}
+a:active{
+    color: blue;
+}
+
+.sidebar{
+    width: 30%;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: flexbox;
+}
+
+
+footer {
+    background-color:black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#main-header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+ 
+}
+nav {
+    background-color: #333;
+    color: #fff;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+
+}
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase{
+    background-image: url('../My_Portifolio/pic1.jpg');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#showcase h1 p{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6rem;
+    padding-top: 30px;
+}
+img{
+    width: 100%;
+}
+
+.main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+}
+section{
+    margin-bottom: 2rem;
+}
+
+h1,h2 {
+    margin-bottom: 1rem;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.7rem 1.2rem;
+    background-color: #005bbb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #004599;
+}
+
+
+
+.my-form{
+    padding: 20px;
+
+}
+@media(min-width:768px){
+
+}
