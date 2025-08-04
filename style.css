@@ -1,3 +1,4 @@
+@media(min-width:768px){
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,16 +9,76 @@ body {
     font-size: 16px;
     margin: 0;
 }
-.container{
+
+.header-container{
     width: 80%;
     margin: auto;
-    overflow: hidden;
+   
+}
+header{
+    background-color: black;
+    color: #fff;
+    min-height: 80px;
+    border-radius: 10px;
+    border-bottom: #84a8d4;
+    
+
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li{
+    display: inline;
+    float: left;
+    padding: 0 20px 0 20px;
+
+}
+
+header #branding{
+    float: left;
+    margin-top: 10px;
+
+}
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+#showcase{
+    min-height: 400px;
+    background-image: url('../My_Portifolio/pic2.jpg');
+    text-align: center;
+    color: #000;
+}
+#showcase h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+
+}
+
+
+span{
+    color: #005bbb;
+}
+.container{
+    align-items: center;
+    flex-basis: 40%;
 }
 
 .about{
     border: 1px #ccc solid;
     padding: 10px;
-    display: flexbox;
+    background: #eee;
+    align-items: center;
 
 }
 .me{
@@ -25,17 +86,21 @@ body {
 }
 
 .contain{
-    border: 1px #ccc solid;
-    padding: 10px;
-    display: flexbox;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    display: grid ;
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    
+    
 }
 
 .contain-2{
-    border: 1px #ccc solid;
-    padding: 10px;
-    display: flexbox;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    display: grid ;
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    
+    
 }
 
 form{
@@ -44,10 +109,12 @@ form{
 }
 .box-1{
     flex-basis: 40%;
+    background: #eee;
 }
 
-.box-2{
+.box-3{
     flex-basis:40%;
+    background: #959393;
 }
 
 
@@ -57,7 +124,7 @@ a{
 
 }
 a:hover{
-    color: red;
+    color: green;
 
 }
 a:active{
@@ -82,50 +149,13 @@ footer {
     font-size: 0.9rem;
 }
 
-#main-header {
-    background-color: black;
-    color: #fff;
-    text-align: center;
- 
-}
-nav {
-    background-color: #333;
-    color: #fff;
-}
-nav ul{
-    padding: 0;
-    list-style: none;
 
-}
-nav li{
-    display: inline;
-}
-
-nav a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding-right: 15px;
-}
-
-#showcase{
-    background-image: url('../My_Portifolio/pic1.jpg');
-    background-position: center right;
-    min-height: 300px;
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
-    background-repeat: no-repeat;
-}
-
-#showcase h1 p{
-    color: #fff;
-    font-size: 50px;
-    line-height: 1.6rem;
-    padding-top: 30px;
-}
 img{
     width: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    justify-content: center;
 }
 
 .main {
@@ -169,15 +199,16 @@ textarea {
 
 button {
     padding: 0.7rem 1.2rem;
-    background-color: #005bbb;
+    background-color: #115aa8;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
     
 }
 
 button:hover {
-    background-color: #004599;
+    background-color: #84a8d4;
 }
 
 
@@ -186,6 +217,5 @@ button:hover {
     padding: 20px;
 
 }
-@media(min-width:768px){
 
 }
